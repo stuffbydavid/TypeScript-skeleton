@@ -4,9 +4,10 @@
     "description": "",
     "dependencies": {},
     "devDependencies": {
-        "file-loader": "latest",
-        "raw-loader": "latest",
         "ts-loader": "latest",
+        "raw-loader": "latest",
+        "file-loader": "latest",
+        "base64-inline-loader": "latest",
         "typescript": "latest",
         "webpack": "latest",
         "webpack-cli": "latest",

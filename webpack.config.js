@@ -17,12 +17,14 @@ module.exports = env => {
                 },
                 {
                     test: /\.(png|jpe?g)$/,
-                    use: [{
-                        loader: "file-loader",
-                        options: {
-                            outputPath: "img",
-                        }
-                    }]
+                    use: (env.mode === "development") ? 
+                        [{
+                            loader: "file-loader",
+                            options: {
+                                outputPath: "img",
+                            }
+                        }]
+                        : "base64-inline-loader"
                 },
                 {
                     test: /\.txt$/,
