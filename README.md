@@ -10,8 +10,9 @@ Uses Webpack for the development server and to create the final distributable.
 ## Develop:
 
 1. `npm run dev`
-2. Launch debugger in VS Code using Chrome
-3. localhost:8080 will open with the application and will auto-refresh when code changes are made, and breakpoints will be hit
+2. Open the folder in VS Code
+3. Launch debugger with F5
+4. localhost:8080 will open with the application and will auto-refresh when code changes are made, and breakpoints will be hit
 
 ## Distribute:
 
