@@ -12,7 +12,7 @@ Uses Webpack for the development server and to create the final distributable.
 1. `npm run dev`
 2. Open the folder in VS Code
 3. Launch debugger with F5
-4. localhost:8080 will open with the application and will auto-refresh when code changes are made, and breakpoints will be hit
+4. localhost:8080 will open with the application and will auto-refresh when code changes are made, and breakpoints will be hit. To disable auto-refresh, add the `--no-inline` flag to `webpack-dev-server` in `package.json`.
 
 ## Distribute:
 
