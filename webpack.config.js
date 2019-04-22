@@ -6,14 +6,27 @@ module.exports = env => {
         entry: './src/app.ts',
         output: {
             filename: 'bundle.js',
-            path: __dirname
+            path: __dirname + "/dist"
         },
         module: {
             rules: [
                 {
                     test: /\.tsx?$/,
-                    loader: 'ts-loader',
+                    loader: "ts-loader",
                     exclude: /node_modules/,
+                },
+                {
+                    test: /\.(png|jpe?g)$/,
+                    use: [{
+                        loader: "file-loader",
+                        options: {
+                            outputPath: "img",
+                        }
+                    }]
+                },
+                {
+                    test: /\.txt$/,
+                    use: "raw-loader"
                 },
             ]
         },
