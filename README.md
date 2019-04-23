@@ -6,6 +6,7 @@ Uses Webpack for the development server and to create the final distributable.
 
 1. Open folder in command prompt
 2. `npm i`
+3. Install the "Debugger for Chrome" extension from Microsoft in VS Code
 
 ## Develop:
 
